@@ -10,6 +10,7 @@ const err_msg = document.getElementById('error-mdg');
 image.style = 'max-width:400px;height:auto';
 $(document).ready(function() {
     $('#btn-check').on('click', function() {
+        $('.spinner').css("display","block");	
         var newData =
         {
             "url" : $('#url').val(),
@@ -25,6 +26,7 @@ $(document).ready(function() {
             data : dataJson,
             success : function(result) {
                 console.log(result);
+                $('.spinner').css("display","none");
 
                 if( result.testStatus.status === 'COMPLETE') {
                     if(result.mobileFriendliness === 'MOBILE_FRIENDLY') {
@@ -44,7 +46,8 @@ $(document).ready(function() {
                 resultdata(result.mobileFriendliness, result.screenshot.data);
             },
             error: function(e) {
-              console.log(e);
+            console.log(e);
+            $('.spinner').css("display","none");
 
               var errorstatus = result.testStatus.status;
               var errormessage = result.testStatus.detail;

@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta charset="utf-8">
+        <link rel="shortcut icon" href="https://cmlabs.co/wp-content/uploads/2020/05/logo.png" type="image/x-icon">
         <title>Mobile Friendly Test</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -22,6 +23,12 @@
                                 <div class="text-center">
                                     <button class="btn btn-check" id="btn-check"><span class="check-arrow-right">CEK SEKARANG</span></button>
                                 </div>
+                                <!-- spinner border -->
+                                <div class="spinner text-center" style="display: none">
+                                    <div class="spinner-border" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                </div> 
                             </div>
                         </div>
                     </div>
@@ -35,7 +42,7 @@
                         <p id="mobile-issues"></p>
                     </div>
                     <div class="col-md-6 text-center">
-                        <img class="img-fluid img-result" id="result-image"/>
+                        <img class="img-fluid img-result" id="result-image" style="border : 10px solid grey; border-radius : 50px"/>
                     </div>
                 </div>
                 <div class="row error" id="error-section">
