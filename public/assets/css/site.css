@@ -1,0 +1,107 @@
+html {
+    scroll-behavior: smooth;
+}
+.container-home {
+    background-image: linear-gradient(#b800e6, #0090e3);
+    padding: 100px;
+}
+.content {
+    height: 300px;
+    position: relative;
+}
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+}
+.subtitle {
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0px 30px 0px;
+}
+.form-mobile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    padding: 100px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.input-url {
+    border: none;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 30px 25px 30px;
+    box-shadow: 0 8px 10px 4px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+.input-url:focus {
+    color: #1a1a1a;
+    box-shadow: 0 10px 12px 4px rgba(0, 0, 0, 0.5);
+}
+.btn-check {
+    margin-top: 20px;
+    border: 0;
+    border-radius: 0;
+    padding: 10px 30px;
+    background-color: #1a1a1a;
+    font-family: 'Poppins', sans-serif;
+    color: #ebebeb;
+    box-shadow: 0 9px 12px 0 rgb(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+.btn-check .check-arrow-right {
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.btn-check .check-arrow-right::after {
+    content: '\2713';
+    position: absolute;
+    opacity: 0;
+    right: -20px;
+    transition: 0.3s ease;
+}
+.btn-check:hover {
+    background-color: #1a1a1a;
+    color: #ebebeb;
+    box-shadow: 0 7px 9px 0 rgba(255, 255, 255, 0.4);
+}
+.btn-check:hover .check-arrow-right {
+  padding-right: 25px;
+}
+.btn-check:hover .check-arrow-right::after {
+    opacity: 1;
+    right: 0;
+}
+.img-result {
+    max-width: 400px;
+    height: auto;
+    box-shadow: 0 9px 12px 0 rgb(0, 0, 0, 0.3);
+}
+.error {
+    display: none;
+}
+
+@media only screen and (max-width: 320px) {
+
+}
+@media only screen and (max-width: 411px) {
+
+}
+@media only screen and (max-width: 500px) {
+
+}
+@media only screen and (max-width: 768px) {
+    .container-home, .form-mobile {
+        padding: 20px;
+    }
+    .content {
+        height: 600px;
+    }
+    .title {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 991px) {}
